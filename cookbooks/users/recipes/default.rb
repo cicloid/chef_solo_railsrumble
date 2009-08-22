@@ -37,4 +37,12 @@ node[:users].each do |user|
     owner user[:username]
     group user[:username]
   end
+  
+  remote_file "#{homedir}/.screenrc" do
+    source "screenrc"
+    mode 0400
+    owner user[:username]
+    group user[:username]
+  end
+
 end
