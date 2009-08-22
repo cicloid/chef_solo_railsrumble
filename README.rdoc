@@ -30,7 +30,7 @@ Debian
 
 == Installation
 
-Be sure to fork this repository adding your pubkey to cookbooks/users/files/default/deploy.pub,
+Be sure to fork this repository adding your pubkey to cookbooks/users/files/default/deploy_id_rsa.pub,
 otherwise you cannot log into the VM (SSH as root is disabled by chef_solo_os).
 
 On host:
